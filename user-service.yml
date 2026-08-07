@@ -1,10 +1,11 @@
 spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/smartlearn_user
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
 
- datasource:
-   url: jdbc:mysql://localhost:3306/smartlearn_user
-   username: root
-   password: password
-
- jpa:
-   hibernate:
-     ddl-auto: update
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
