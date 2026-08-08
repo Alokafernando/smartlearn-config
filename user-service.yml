@@ -1,11 +1,22 @@
+server:
+  port: 8081
+
 spring:
+  application:
+    name: user-service
+
   datasource:
     url: jdbc:postgresql://localhost:5432/smartlearn_user
     username: postgres
-    password: 123456
+    password: your_password
     driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: true
+    show-sql: false
+
+jwt:
+  secretKey: "ef79e5e857d1d64e41ea91d3d3209adb33983d9655de4903402001dce8870aaa"
+  accessExpiration: 900000
+  refreshExpiration: 604800000
