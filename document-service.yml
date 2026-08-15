@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/smartlearn_documents
+    username: postgres
+    password: 123456
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: false
+
+    properties:
+      hibernate:
+        format_sql: true
+
+  jackson:
+    time-zone: Asia/Colombo
+
+server:
+  port: 8082
