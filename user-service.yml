@@ -25,5 +25,5 @@ eureka:
 
 jwt:
   secret-key: "ef79e5e857d1d64e41ea91d3d3209adb33983d9655de4903402001dce8870aaa"
-  access-token-expiration: 900000
+  access-token-expiration: 3600000
   refresh-token-expiration: 604800000
