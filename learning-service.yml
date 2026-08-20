@@ -33,10 +33,10 @@ document:
     url: http://localhost:8082
 
 ai:
-  enabled: false
-  api-url:
-  api-key:
-  model:
+  enabled: true
+  api-url: https://api.openai.com/v1
+  api-key: ${OPENAI_API_KEY}
+  model: gpt-5-mini
 
 management:
   endpoints:
